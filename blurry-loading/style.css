@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+}
+
+.bg {
+  background-image: url("./cash-macanaya-QFfljL1xWvw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  /* filter: blur(70px); */
+  z-index: -1;
+}
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  color: crimson;
+}

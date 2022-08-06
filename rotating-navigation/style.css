@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: rgb(44, 42, 42);
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+.container {
+  background: whitesmoke;
+  padding: 50px;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  z-index: 1000;
+}
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+.container.show-nav .circle {
+  transform: rotate(-70deg);
+}
+.circle {
+  position: relative;
+  background-color: skyblue;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  background: transparent;
+  transform-origin: top left;
+  color: white;
+}
+
+.circle button#open {
+  top: 70px;
+  left: 60%;
+}
+.circle button#close {
+  left: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+.content {
+  margin: 0 auto;
+  max-width: 90%;
+}
+.content img {
+  width: 100%;
+  object-fit: cover;
+}
+.content h1 {
+  margin: 50px 0 5px 0;
+  font-weight: 600;
+}
+.content small {
+  margin-bottom: 25px;
+  font-style: italic;
+}
+.content p {
+  line-height: 1.7;
+  font-size: 16px;
+  margin: 15px 0;
+}
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.2s;
+}
+nav ul {
+  z-index: -1;
+  position: fixed;
+  bottom: 10px;
+  left: 15px;
+  list-style: none;
+}
+nav ul li {
+  margin: 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;
+}
+
+nav ul li + li {
+  margin-left: 35px;
+  transform: translateX(-150%);
+  transition: transform 0.5s ease-in;
+}
+nav ul li + li + li {
+  margin-left: 50px;
+  transform: translateX(-200%);
+  transition: transform 0.6s ease-in;
+}
+nav ul li i {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-right: 5px;
+}
+footer {
+  background: skyblue;
+  padding: 14px;
+  margin: 0;
+  text-align: center;
+}
