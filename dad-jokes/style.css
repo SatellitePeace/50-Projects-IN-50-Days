@@ -1,0 +1,42 @@
+body {
+  background: slateblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  font-family: sans-serif;
+  background-color: #fff;
+  max-width: 100%;
+  width: 800px;
+  text-align: center;
+  padding: 3rem 0;
+  border-radius: 10px;
+}
+h2 {
+  opacity: 0.6;
+  font-size: 1.5rem;
+}
+.joke {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  opacity: 0.9;
+  line-height: 2.4rem;
+}
+.btn {
+  background: slateblue;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  opacity: 0.9;
+  background: steelblue;
+}
+.btn:active {
+  transform: scale(0.98);
+}
