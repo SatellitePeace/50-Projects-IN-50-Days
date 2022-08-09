@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: thistle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.counter-container {
+  font-size: 1.2rem;
+  margin: 2px 3rem;
+}
+.counter-container i {
+  font-size: 3rem;
+}
+.purple {
+  color: darkorchid;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: slateblue;
+}
+.counter {
+  font-size: 2.2rem;
+  margin: 1rem 0;
+}
+/* Make responsive on small screen */
+
+@media screen and (max-width: 560px) {
+  body {
+    flex-direction: column;
+  }
+  .counter-container {
+    margin-top: 2rem;
+  }
+}
