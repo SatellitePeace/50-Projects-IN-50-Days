@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightpink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.btn {
+  background: rgba(0, 0, 0, 0.15);
+  padding: 20px 30px;
+  color: #fff;
+  margin: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.btn:hover {
+  background: pink;
+}
