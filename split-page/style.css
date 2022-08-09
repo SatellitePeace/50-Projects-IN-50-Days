@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+}
+.container {
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+.split {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.split.left {
+  background: url("./kerde-severin-NVD_32BBZFE-unsplash.jpg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.4s ease-in;
+}
+.split.left::before {
+  content: "";
+  position: absolute;
+  background: rgba(87, 84, 236, 0.7);
+  height: 100%;
+  width: 100%;
+}
+.split.right {
+  background: url("./louis-philippe-poitras-WMMh6BtmTMo-unsplash.jpg");
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 0.4s ease-in;
+}
+.split.right::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(43, 43, 43, 0.8);
+}
+
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 4rem;
+  color: #fff;
+}
+.btn {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  color: #fff;
+  border: #fff solid 2px;
+  width: 8rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  transition: 0.4s;
+}
+.split .lead {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 1.3rem;
+}
+.split.right .btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border: rgba(0, 0, 0, 0.6);
+}
+.split.left .btn:hover {
+  background: rgba(87, 84, 236, 1);
+  border: rgba(87, 84, 236, 1);
+}
+/* for left side */
+.container.hover-left .split.left {
+  width: 75%;
+}
+.container.hover-left .split.right {
+  width: 25%;
+}
+/* for right side */
+.container.hover-right .split.right {
+  width: 75%;
+}
+.container.hover-right .split.left {
+  width: 25%;
+}
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+  }
+  .btn {
+    width: 6rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
