@@ -1,0 +1,74 @@
+body {
+  background: lightgray;
+}
+
+.container {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+h1 {
+  text-align: center;
+  font-weight: 500;
+}
+.faq {
+  border: 1px solid grey;
+  margin: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 5px 3px 7px #888888;
+  transition: 0.3s ease;
+}
+.faq h3 {
+  max-width: 80%;
+}
+.faq.active::before,
+.faq.active::after {
+  content: "\F268";
+  font-family: "bootstrap-icons";
+  font-size: 5rem;
+  position: absolute;
+  top: -8px;
+  left: -1px;
+  color: lightblue;
+  z-index: 0;
+  opacity: 0.4;
+}
+.faq.active::after {
+  top: 40px;
+  left: 40px;
+  transform: rotate(280deg);
+}
+.faq-toggle {
+  position: absolute;
+  right: 30px;
+  top: 30%;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  color: green;
+  cursor: pointer;
+  text-align: center;
+}
+.active {
+  background: #fff;
+}
+.faq p {
+  display: none;
+}
+.faq.active p {
+  display: block;
+}
+.faq.active .faq-toggle .bi-chevron-down {
+  display: none;
+}
+.faq.active .faq-toggle .bi-x-circle {
+  display: block;
+  color: red;
+}
+.faq-toggle .bi-x-circle {
+  display: none;
+}
