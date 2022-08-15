@@ -1,0 +1,88 @@
+/* body {
+  background: rebeccapurple;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btn {
+  background-color: white;
+  color: rebeccapurple;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.toast {
+  background-color: white;
+  color: rebeccapurple;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+} */
+
+body {
+  background-color: rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.btn {
+  background: white;
+  border: none;
+  padding: 1rem;
+  color: rebeccapurple;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#toasts {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.toast {
+  padding: 0.5rem;
+  background: white;
+  font-size: 18px;
+  margin: 0.5rem;
+}
+.toast.error {
+  background: darkred;
+}
+.toast.success {
+  background: darkgreen;
+}
+.toast.pending {
+  background: orange;
+}
