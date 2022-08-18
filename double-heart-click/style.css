@@ -1,0 +1,39 @@
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h3 i {
+  color: red;
+}
+small {
+  font-size: 1rem;
+}
+.loveme {
+  background: url("./grid6.jpg") no-repeat center/cover;
+  height: 440px;
+  width: 330px;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 7px;
+  position: relative;
+}
+
+.loveme .bi-heart-fill {
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  animation: grow 0.5s ease-in-out;
+  color: red;
+}
+
+@keyframes grow {
+  to {
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0;
+  }
+}
