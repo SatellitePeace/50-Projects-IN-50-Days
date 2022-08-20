@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: monospace;
+  background: darkolivegreen;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: darkgreen;
+  max-width: 100%;
+  width: 350px;
+  border-radius: 0.5rem;
+  color: #fff;
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.results-container #result {
+  background: rgba(0, 0, 0, 0.4);
+  height: 2.8rem;
+  width: calc(100% - 40px);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.btn {
+  position: absolute;
+  top: 0.45rem;
+  right: 2rem;
+  font-size: 1.3rem;
+  width: 40px;
+  padding: 0.2rem 0;
+  border: none;
+  color: #fff;
+  background: darkolivegreen;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: green;
+}
+.settings {
+  margin: 0 1.5rem;
+}
+.setting {
+  display: flex;
+  justify-content: space-between;
+}
+.setting:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.pass-btn {
+  display: block;
+  border: none;
+  color: #fff;
+  background: darkolivegreen;
+  margin: 1.5rem;
+  height: 2.3rem;
+  width: calc(100% - 50px);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.pass-btn:hover {
+  background: green;
+}
